@@ -1,0 +1,40 @@
+.hero {
+  &__outer {
+    height: 41.6666666667vw;
+    background-image: url(../img/main.7bc54911.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 75%;
+    max-height: 800px;
+  }
+  &__wrapper {
+    padding-top: 50px;
+  }
+  &__title-wrapper {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    margin: 0 auto;
+  }
+  &__title {
+    color: var(--white);
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: uppercase;
+    b {
+      font-weight: 700;
+    }
+  }
+  &__modal {
+    display: block;
+    font-size: 22px;
+    margin-top: 0.68em;
+    width: fit-content;
+    min-width: 300px;
+    padding: 1.18em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

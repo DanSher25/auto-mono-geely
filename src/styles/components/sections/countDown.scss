@@ -1,0 +1,26 @@
+.countdown {
+  &__outer {
+    background: linear-gradient(180deg, #092333 45.31%, #1c465f);
+    padding: 57px 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 57px;
+    color: var(--white);
+  }
+  &__modal {
+    background-color: var(--white);
+    color: var(--main-font);
+    font-size: 17px;
+    height: fit-content;
+    &:hover {
+      background-color: var(--white);
+      color: var(--main-font);
+    }
+  }
+}
