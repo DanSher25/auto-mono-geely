@@ -1,0 +1,35 @@
+.credit {
+  &__wrapper {
+    display: flex;
+  }
+  &__picture {
+    width: 50%;
+  }
+  &__form-wrapper {
+    width: 50%;
+    background-color: var(--credit-bg);
+    padding: 25px 0;
+    padding-left: 159px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  &__form {
+    color: var(--white);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 27px;
+  }
+  &__input {
+    border-color: var(--white);
+    color: var(--white);
+  }
+  &__submit {
+    width: fit-content;
+    background-color: var(--white);
+    color: var(--main-font);
+  }
+}

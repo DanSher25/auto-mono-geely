@@ -189,6 +189,13 @@ body {
   width: 100%;
 }
 
+.container-lg {
+  margin: 0 auto;
+  max-width: 1538px;
+  padding: 0 10px;
+  width: 100%;
+}
+
 .locked {
   overflow: hidden;
 }
@@ -217,4 +224,8 @@ body {
 }
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
   color: var(--white) !important;
+}
+
+.red {
+  color: var(--red);
 }

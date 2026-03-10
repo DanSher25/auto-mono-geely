@@ -1,0 +1,23 @@
+.upgrade-offer {
+  &__outer {
+    background-color: var(--section-bg);
+    padding-bottom: 74px;
+    padding-top: 74px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 20px;
+    margin: 23px 0 16px;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

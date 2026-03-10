@@ -3,8 +3,15 @@
 @use "./common";
 @use "./components/requestCall";
 @use "./components/form";
+@use "./components/model";
+@use "./components/contacts";
 @use "./components/sections/header";
 @use "./components/sections/hero";
 @use "./components/sections/advantages";
 @use "./components/sections/countDown";
 @use "./components/sections/catalog";
+@use "./components/sections/upgradeOffer";
+@use "./components/sections/promos";
+@use "./components/sections/credit";
+@use "./components/sections/map";
+@use "./components/sections/footer";

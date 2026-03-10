@@ -1,0 +1,34 @@
+.promos {
+  &__wrapper {
+    padding-top: 37px;
+    padding-bottom: 80px;
+  }
+  &__title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 42px;
+  }
+  &__body {
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-title {
+    font-size: 44px;
+    line-height: 56px;
+    .red {
+      font-weight: 700;
+    }
+  }
+  &__modal {
+    display: block;
+    margin-top: 17px;
+    height: 50px;
+    width: 318px;
+    text-align: center;
+  }
+  &__picture {
+    width: 100%;
+    max-width: 762px;
+  }
+}
