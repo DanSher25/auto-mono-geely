@@ -2,21 +2,40 @@
   &__wrapper {
     padding-top: 90px;
     padding-bottom: 90px;
+    @media (max-width: 1024px) {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
   }
   &__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 24px;
+    @media (max-width: 768px) {
+      justify-content: space-around;
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 11px;
+    gap: 12px;
     align-items: center;
     text-align: center;
+    @media (max-width: 1024px) {
+      width: calc(33.333% - 12px * 2 / 3);
+    }
+    @media (max-width: 768px) {
+      width: calc(33.333% - 6px);
+    }
   }
   &__title {
     text-transform: uppercase;
     color: var(--pale);
     line-height: 22px;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }

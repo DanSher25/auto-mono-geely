@@ -1,30 +1,52 @@
 .model {
   &__wrapper {
     display: flex;
-    gap: 115px;
+    gap: calc(5.125vw - 16.4px);
+    justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      border: 1px solid var(--main-font);
+      padding: 30px 9px;
+    }
   }
   &__content {
     width: calc(31.25vw + 220px);
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
   &__info {
     width: calc(10.3125vw + 167px);
     min-width: calc(10.3125vw + 167px);
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
   &__header {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
   &__title {
     font-size: 37px;
     font-weight: 500;
     margin-bottom: 10px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
   }
   &__gift {
     color: var(--red);
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  &__tooltip {
+    display: inline;
   }
   &__tooltip-icon {
     width: 20px;
@@ -36,22 +58,60 @@
   }
   &__features {
     max-width: 592px;
+    &--mobile {
+      display: none;
+    }
+    @media (max-width: 1200px) {
+      max-width: 380px;
+    }
+    @media (max-width: 992px) {
+      display: flex;
+      align-items: flex-end;
+      margin-left: auto;
+      &--mobile {
+        max-width: 100%;
+        display: block;
+        .model__features-list,
+        .model__features-gift {
+          display: flex;
+        }
+      }
+    }
   }
   &__features-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    @media (max-width: 992px) {
+      display: none;
+      justify-content: space-around;
+    }
   }
   &__features-item {
     display: flex;
     align-items: center;
     gap: 8px;
     flex: calc(50% - 8px);
+    @media (max-width: 992px) {
+      flex: 30%;
+      flex-direction: column;
+      flex-grow: 0;
+    }
+    @media (max-width: 576px) {
+      flex: 45%;
+      gap: 4px;
+    }
   }
   &__features-title {
     color: var(--grey);
     line-height: 20px;
     font-size: 15px;
+    @media (max-width: 1200px) {
+      font-size: 13px;
+    }
+    @media (max-width: 992px) {
+      text-align: center;
+    }
   }
   &__features-gift {
     width: fit-content;
@@ -62,9 +122,30 @@
     color: var(--white);
     font-size: 15px;
     margin-top: 10px;
+    @media (max-width: 1200px) {
+      font-size: 13px;
+    }
+    @media (max-width: 992px) {
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__features-mobile {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+      font-size: 12px;
+    }
   }
   &__slide {
     height: 400px !important;
+    @media (max-width: 1200px) {
+      height: 275px !important;
+    }
+    @media (max-width: 576px) {
+      height: 200px !important;
+    }
   }
   &__car-img {
     height: 100%;
@@ -96,6 +177,13 @@
   &__gallery-list {
     overflow: hidden;
     height: 174px;
+    @media (max-width: 1200px) {
+      height: 140px;
+    }
+    @media (max-width: 992px) {
+      height: auto;
+      max-height: 200px;
+    }
   }
   &__gallery-item {
     cursor: pointer;
@@ -110,14 +198,27 @@
     padding: 28px;
     padding-bottom: 40px;
     border: 0.5px solid rgba(0, 0, 0, 0.5);
+    @media (max-width: 1200px) {
+      padding: 22px;
+    }
+    @media (max-width: 992px) {
+      border: none;
+      padding: 12px;
+    }
   }
   &__amount {
     font-size: 20px;
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
   &__info-list {
     margin-top: 18px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 992px) {
+      margin: 0;
+    }
   }
   &__info-item {
     padding: 31px 0;
@@ -127,6 +228,14 @@
     &:not(:last-child) {
       border-bottom: 1px solid hsla(0, 0%, 40%, 0.5);
     }
+    @media (max-width: 1200px) {
+      padding: 20px 0;
+      gap: 13px;
+    }
+    @media (max-width: 992px) {
+      border: none !important;
+      padding: 5px 0;
+    }
   }
   &__info-text {
     font-size: 18px;
@@ -134,12 +243,33 @@
       font-weight: bold;
       font-size: 22px;
     }
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      strong {
+        font-size: 20px;
+      }
+    }
+    @media (max-width: 992px) {
+      font-size: 14px;
+      strong {
+        font-size: 14px;
+      }
+    }
   }
   &__info-buttons {
     margin-top: 13px;
     display: flex;
     flex-direction: column;
     gap: 18px;
+    &--mobile {
+      display: none;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+    &--mobile {
+      display: flex;
+    }
   }
   &__info-button,
   &__info-button-blue {

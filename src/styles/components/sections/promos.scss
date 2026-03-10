@@ -2,22 +2,39 @@
   &__wrapper {
     padding-top: 37px;
     padding-bottom: 80px;
+    @media (max-width: 768px) {
+      padding-bottom: 34px;
+    }
   }
   &__title {
     font-weight: 500;
     text-align: center;
     font-size: 42px;
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
   &__body {
     margin-top: 88px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 22px;
+    }
   }
   &__info-title {
     font-size: 44px;
     line-height: 56px;
     .red {
       font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 24px;
+      line-height: 32px;
     }
   }
   &__modal {
@@ -26,9 +43,28 @@
     height: 50px;
     width: 318px;
     text-align: center;
+    &--mobile {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      font-size: 16px;
+      display: none;
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+  &__picture-wrapper {
+    width: 100%;
+    max-width: 762px;
   }
   &__picture {
     width: 100%;
-    max-width: 762px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
   }
 }

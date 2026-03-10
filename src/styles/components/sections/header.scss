@@ -9,11 +9,42 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__logo-wrapper {
+    @media (max-width: 768px) {
+      flex: calc(50% - 6px);
+    }
   }
   &__logo {
     display: block;
     max-width: 141px;
     width: 100%;
+    @media (max-width: 420px) {
+      max-width: 100px;
+    }
+  }
+  &__brand-wrapper {
+    @media (max-width: 768px) {
+      flex: calc(50% - 6px);
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__brand {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    @media (max-width: 420px) {
+      max-width: 150px;
+    }
+  }
+  &__brand-img {
+    width: 100%;
+    height: 100%;
   }
   &__logo-img {
     width: 100%;
@@ -26,6 +57,12 @@
       text-decoration: underline;
       color: inherit;
     }
+    @media (max-width: 1200px) {
+      font-size: 22px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
   &__models {
     display: flex;
@@ -33,8 +70,31 @@
     justify-content: space-between;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    @media (max-width: 992px) {
+      gap: 10px;
+      justify-content: center;
+    }
   }
   &__model-link {
     font-size: 16px;
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+  }
+  &__address {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__modal {
+    display: block;
+    @media (max-width: 1200px) {
+      padding: 10px 24px;
+      font-size: 16px;
+    }
+    @media (max-width: 360px) {
+      padding: 8px 20px;
+      font-size: 15px;
+    }
   }
 }

@@ -21,6 +21,7 @@
     "flipdown": "^0.3.2",
     "imask": "^7.6.1",
     "slim-select": "^3.4.3",
-    "swiper": "^12.1.2"
+    "swiper": "^12.1.2",
+    "tippy.js": "^6.3.7"
   }
 }

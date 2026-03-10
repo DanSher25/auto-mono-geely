@@ -7,11 +7,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 24px;
+    }
   }
   &__title {
     font-weight: 500;
     font-size: 57px;
     color: var(--white);
+    @media (max-width: 576px) {
+      font-size: 32px;
+    }
   }
   &__modal {
     background-color: var(--white);
@@ -22,5 +29,39 @@
       background-color: var(--white);
       color: var(--main-font);
     }
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.countdown-timer {
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+  }
+  &__value {
+    width: 95px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 42px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.52);
+    color: var(--white);
+    @media (max-width: 576px) {
+      width: 60px;
+      height: 40px;
+      font-size: 28px;
+    }
+  }
+  &__name {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
   }
 }

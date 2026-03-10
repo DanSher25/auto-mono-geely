@@ -1,9 +1,15 @@
 .credit {
   &__wrapper {
     display: flex;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   &__picture {
     width: 50%;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
   &__form-wrapper {
     width: 50%;
@@ -13,23 +19,55 @@
     padding-right: 10px;
     display: flex;
     align-items: center;
+    @media (max-width: 1200px) {
+      width: 100%;
+      padding: 20px 0;
+    }
   }
   &__form {
     color: var(--white);
+    max-width: 400px;
+    @media (max-width: 1200px) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: none;
+      text-align: center;
+    }
   }
   &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 27px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   &__input {
     border-color: var(--white);
     color: var(--white);
+    @media (max-width: 1200px) {
+      max-width: 300px;
+      width: 100%;
+    }
   }
   &__submit {
     width: fit-content;
     background-color: var(--white);
     color: var(--main-font);
+    @media (max-width: 1200px) {
+      max-width: 300px;
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+  &__checkbox {
+    @media (max-width: 1200px) {
+      max-width: 300px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
