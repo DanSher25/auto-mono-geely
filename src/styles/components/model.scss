@@ -266,9 +266,9 @@
     }
     @media (max-width: 992px) {
       display: none;
-    }
-    &--mobile {
-      display: flex;
+      &--mobile {
+        display: flex;
+      }
     }
   }
   &__info-button,
